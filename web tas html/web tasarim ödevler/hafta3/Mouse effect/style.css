@@ -1,0 +1,31 @@
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    cursor: none;
+    background-color: #d44491;
+    
+}
+
+.cursor-dot{
+    width: 50px;
+    height: 50px;
+   background-image: url('bayrak.jpg');
+   background-size: cover; 
+   background-position: center; 
+}
+
+.cursor-border{
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+       animation: pulse 1.5s infinite alternate;
+}
+
+.cursor-border, .cursor-dot{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50% ;
+    pointer-events: none;
+}
